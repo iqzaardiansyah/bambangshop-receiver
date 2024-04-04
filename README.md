@@ -14,4 +14,20 @@
 
 </details>
 
+<details>
+<summary>Reflection Subscriber-2</summary>
+
+1. Have you explored things outside of the steps in the tutorial, for example: src/lib.rs? If not, explain why you didn’t do so. If yes, explain things that you’ve learned from those other parts of code.
+
+    The `src/lib.rs` file defines essential components for a Rust application, including configuration handling (`AppConfig`), error handling utilities (`Result`, `Error`, `ErrorResponse`, `compose_error_response`), and initialization of a Reqwest HTTP client (`REQWEST_CLIENT`). These components are crucial for building a robust and functional application beyond the scope of a tutorial. Understanding and exploring these additional parts of the codebase is essential for gaining insights into various aspects of Rust programming and developing more robust and maintainable Rust applications.
+
+2. Since you have completed the tutorial by now and have tried to test your notification system by spawning multiple instances of Receiver, explain how Observer pattern eases you to plug in more subscribers. How about spawning more than 1 instance of Main app, will it still be easy enough to add to the system?
+
+    The Observer pattern facilitates the integration of additional subscribers into the notification system by providing a flexible and scalable architecture. Each subscriber acts as an observer that receives notifications from the main application, allowing for easy customization and extensibility. By adhering to the Observer pattern, adding new subscribers involves implementing the subscriber interface and registering them with the main application, without requiring modifications to the core functionality. Furthermore, spawning multiple instances of the main application is also straightforward, as each instance can maintain its list of subscribers independently, enabling parallel processing of notifications. This modular and scalable design ensures that the notification system can accommodate growth and handle increased workload efficiently while maintaining flexibility for future expansion.
+
+3. Have you tried to make your own Tests, or enhance documentation on your Postman collection? If you have tried those features, tell us whether it is useful for your work (it can be your tutorial work or your Group Project)
+
+    Creating tests in tools like Postman enables developers to automate the process of verifying API endpoints and responses, ensuring application reliability and stability through automated regression testing and validation against expected behaviors. On the other hand, enhancing documentation within Postman collections by including descriptions, examples, and usage instructions fosters better communication and collaboration within development teams, reduces onboarding time for new developers, and ensures consistency in API usage across the project. Overall, leveraging these features can significantly improve the development process, software quality, and collaboration among team members in various projects.
+
+</details>
 </details>
